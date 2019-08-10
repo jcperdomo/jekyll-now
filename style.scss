@@ -19,9 +19,11 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 16px/1.4 $helvetica;
   color: $darkGray;
+  padding-bottom: 50px;
 }
+
 
 .container {
   margin: 0 auto;
