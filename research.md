@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-[Stochastic Optimization for Performative Prediction](https://arxiv.org/pdf/2006.06887.pdf) - *preprint*   
+[Stochastic Optimization for Performative Prediction](https://arxiv.org/pdf/2006.06887.pdf) - *Neurips 2020*   
 Celestine Mendler-Dunner\*, JCP\*, Tijana Zrnic\* , and Moritz Hardt 
 
 [Performative Prediction](https://arxiv.org/pdf/2002.06673.pdf) - *ICML 2020*   
