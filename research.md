@@ -11,6 +11,7 @@ Celestine Mendler-Dunner\*, JCP\*, Tijana Zrnic\* , and Moritz Hardt
 JCP\*, Tijana Zrnic\*, Celestine Mendler-Dunner, and Moritz Hardt 
 
 [Robust Attacks against Multiple Classifiers](https://arxiv.org/pdf/1906.02816.pdf) - *manuscript*
+
 JCP, Yaron Singer
 
 [Universal Noise Models in Machine Learning](/pdfs/thesis_jcp.pdf) - *undergraduate thesis, awarded the Thomas J. Hoopes Prize* 
