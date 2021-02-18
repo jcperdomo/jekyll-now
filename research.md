@@ -4,7 +4,8 @@ title: Research
 permalink: /research/
 ---
 
-[Outside the Echo Chamber: Optimizing the Performative Risk](https://arxiv.org/pdf/2102.08570.pdf) - *preprint, 2021*
+[Outside the Echo Chamber: Optimizing the Performative Risk](https://arxiv.org/pdf/2102.08570.pdf) - *preprint*
+
 John Miller\*, JCP\*, Tijana Zrnic\*
 
 [Stochastic Optimization for Performative Prediction](https://arxiv.org/pdf/2006.06887.pdf) - *Neurips 2020*   
