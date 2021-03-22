@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-[Towards a Dimension-Free Understanding of Adaptive Linear Control](/pdfs/dimension_free_lqr.pdf) - *preprint*    
+[Towards a Dimension-Free Understanding of Adaptive Linear Control](https://arxiv.org/pdf/2103.10620.pdf) - *preprint*    
 JCP, Max Simchowitz, Alekh Agarwal, Peter Bartlett
 
 [Outside the Echo Chamber: Optimizing the Performative Risk](https://arxiv.org/pdf/2102.08570.pdf) - *preprint*   
