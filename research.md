@@ -28,5 +28,5 @@ JCP, Yaron Singer
 [Universal Noise Models in Machine Learning](/pdfs/thesis_jcp.pdf)                  
 *undergraduate thesis, awarded the Thomas J. Hoopes Prize*     
 
-* Equal Contribution
+\* Equal Contribution
    
