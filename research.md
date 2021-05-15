@@ -5,7 +5,7 @@ permalink: /research/
 ---
 
 [Towards a Dimension-Free Understanding of Adaptive Linear Control](https://arxiv.org/pdf/2103.10620.pdf)   
-*preprint, 2021*             
+*Conference on Learning Theory (COLT) 2021*             
 **JCP**, Max Simchowitz, Alekh Agarwal, Peter Bartlett   
     
 [Outside the Echo Chamber: Optimizing the Performative Risk](https://arxiv.org/pdf/2102.08570.pdf)        
