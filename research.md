@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-[Stabilizing Dynamical Systems via Policy Gradient Methods](https://jcperdomo.org/research/) *(link coming soon)*
+[Stabilizing Dynamical Systems via Policy Gradient Methods](https://jcperdomo.org/research/) *(preprint link coming soon)*      
 **JCP**, Jack Umenberger, Max Simchowitz    
 
 
