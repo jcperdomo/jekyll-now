@@ -4,6 +4,10 @@ title: Research
 permalink: /research/
 ---
 
+[Stabilizing Dynamical Systems via Policy Gradient Methods](https://jcperdomo.org/research/) *(link coming soon)*
+**JCP**, Jack Umenberger, Max Simchowitz    
+
+
 [Towards a Dimension-Free Understanding of Adaptive Linear Control](https://arxiv.org/pdf/2103.10620.pdf)   
 **JCP**, Max Simchowitz, Alekh Agarwal, Peter Bartlett   
 *Conference on Learning Theory (COLT) 2021*             
