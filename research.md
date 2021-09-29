@@ -6,7 +6,7 @@ permalink: /research/
 
 [Stabilizing Dynamical Systems via Policy Gradient Methods](https://jcperdomo.org/research/) *(preprint link coming soon)*      
 **JCP**, Jack Umenberger, Max Simchowitz    
-
+*Advances in Neural Information Processing Systems (Neurips) 2021*    
 
 [Towards a Dimension-Free Understanding of Adaptive Linear Control](https://arxiv.org/pdf/2103.10620.pdf)   
 **JCP**, Max Simchowitz, Alekh Agarwal, Peter Bartlett   
