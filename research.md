@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-[Stabilizing Dynamical Systems via Policy Gradient Methods](https://jcperdomo.org/research/) *(preprint link coming soon)*      
+[Stabilizing Dynamical Systems via Policy Gradient Methods](https://arxiv.org/pdf/2110.06418.pdf)       
 **JCP**, Jack Umenberger, Max Simchowitz    
 *Advances in Neural Information Processing Systems (Neurips) 2021*    
 
