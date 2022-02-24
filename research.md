@@ -4,6 +4,10 @@ title: Research
 permalink: /research/
 ---
 
+
+[Globally Convergent Policy Search over Dynamic Filters for Output Estimation](http://arxiv.org/abs/2202.11659)   
+Jack Umenberger, Max Simchowitz, **JCP**, Kaiqing Zhang, Russ Tedrake
+
 [Stabilizing Dynamical Systems via Policy Gradient Methods](https://arxiv.org/pdf/2110.06418.pdf)       
 **JCP**, Jack Umenberger, Max Simchowitz    
 *Advances in Neural Information Processing Systems (Neurips) 2021*    
