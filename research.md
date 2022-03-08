@@ -5,7 +5,8 @@ permalink: /research/
 ---
 
 [A Sharp Characterization of Linear Estimators for Offline Policy Evaluation](/pdfs/linear_ope.pdf)    
-**JCP**, Akshay Krishnamurthy, Peter Bartlett, Sham Kakade     
+**JCP**, Akshay Krishnamurthy, Peter Bartlett, Sham Kakade   
+*preprint, 2022*    
 
 [Globally Convergent Policy Search over Dynamic Filters for Output Estimation](http://arxiv.org/abs/2202.11659)      
 Jack Umenberger, Max Simchowitz, **JCP**, Kaiqing Zhang, Russ Tedrake    
