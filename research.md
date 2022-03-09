@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-[A Sharp Characterization of Linear Estimators for Offline Policy Evaluation](/pdfs/linear_ope.pdf)    
+[A Sharp Characterization of Linear Estimators for Offline Policy Evaluation](https://arxiv.org/pdf/2203.04236.pdf)    
 **JCP**, Akshay Krishnamurthy, Peter Bartlett, Sham Kakade   
 *preprint, 2022*    
 
