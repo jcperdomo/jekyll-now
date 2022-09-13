@@ -4,6 +4,8 @@ title: Research
 permalink: /research/
 ---
 
+**2022**
+
 [A Sharp Characterization of Linear Estimators for Offline Policy Evaluation](https://arxiv.org/pdf/2203.04236.pdf)    
 **JCP**, Akshay Krishnamurthy, Peter Bartlett, Sham Kakade   
 *Journal of Machine Learning Research (JMLR), to appear pending minor revision, 2022*        
