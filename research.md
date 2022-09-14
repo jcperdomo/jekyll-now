@@ -4,19 +4,19 @@ title: Research
 permalink: /research/
 ---
 
-## 2022
+### 2022
 
 
 [A Sharp Characterization of Linear Estimators for Offline Policy Evaluation](https://arxiv.org/pdf/2203.04236.pdf)    
 **JCP**, Akshay Krishnamurthy, Peter Bartlett, Sham Kakade   
-*Journal of Machine Learning Research (JMLR), to appear pending minor revision, 2022*        
+*Journal of Machine Learning Research (JMLR), to appear pending minor revision 2022*        
 
 [Globally Convergent Policy Search over Dynamic Filters for Output Estimation](http://arxiv.org/abs/2202.11659)      
 Jack Umenberger, Max Simchowitz, **JCP**, Kaiqing Zhang, Russ Tedrake    
-*preprint, 2022*     
+*Advances in Neural Information Processing Systems (Neurips) 2022*     
    
 
-## 2021
+### 2021
 
 
 [Stabilizing Dynamical Systems via Policy Gradient Methods](https://arxiv.org/pdf/2110.06418.pdf)       
@@ -35,7 +35,7 @@ John Miller\*, **JCP**\*, Tijana Zrnic\*
 *non-archival track at Foundations of Responsible Computing (FORC) 2021*    
        
 
-## 2020
+### 2020
 
 
 [Stochastic Optimization for Performative Prediction](https://arxiv.org/pdf/2006.06887.pdf)         
@@ -48,7 +48,7 @@ Celestine Mendler-Dunner\*, **JCP**\*, Tijana Zrnic\* , and Moritz Hardt
 *International Conference on Machine Learning (ICML) 2020*     
    
 
-## Older
+### Older
 
 
 [Robust Attacks against Multiple Classifiers](https://arxiv.org/pdf/1906.02816.pdf)             
