@@ -7,6 +7,9 @@ permalink: /research/
 ### 2022
 
 
+[Making Decisions under Outcome Performativity](http://arxiv.org/abs/2210.01745.pdf)   
+Michael P. Kim\*, **JCP**\*    
+
 [A Sharp Characterization of Linear Estimators for Offline Policy Evaluation](https://arxiv.org/pdf/2203.04236.pdf)    
 **JCP**, Akshay Krishnamurthy, Peter Bartlett, Sham Kakade   
 *Journal of Machine Learning Research (JMLR), to appear pending minor revision 2022*        
@@ -60,5 +63,5 @@ Celestine Mendler-Dunner\*, **JCP**\*, Tijana Zrnic\* , and Moritz Hardt
 *undergraduate thesis, awarded the Thomas J. Hoopes Prize* 
    
 
-\* Equal Contribution
+\* equal contribution, alphabetical ordering 
    
