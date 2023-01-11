@@ -9,7 +9,7 @@ permalink: /research/
 
 [Making Decisions under Outcome Performativity](http://arxiv.org/pdf/2210.01745.pdf)   
 Michael P. Kim\*, **JCP**\*    
-*Innovations in Theoretical Computer Science (ITCS), 2023*   
+*Innovations in Theoretical Computer Science (ITCS) 2023*   
 
 [A Complete Characterization of Linear Estimators for Offline Policy Evaluation](https://arxiv.org/pdf/2203.04236.pdf)    
 **JCP**, Akshay Krishnamurthy, Peter Bartlett, Sham Kakade   
