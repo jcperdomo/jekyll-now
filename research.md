@@ -4,12 +4,18 @@ title: Research
 permalink: /research/
 ---
 
-### 2022
+### 2023
 
+[Difficult Lessons on Social Prediction from Wisconsin Public Schools](https://arxiv.org/pdf/2304.06205.pdf)  
+**JCP**, Tolani Britton, Moritz Hardt, Rediet Abebe   
+*preprint, 2023*  
 
 [Making Decisions under Outcome Performativity](http://arxiv.org/pdf/2210.01745.pdf)   
 Michael P. Kim\*, **JCP**\*    
 *Innovations in Theoretical Computer Science (ITCS) 2023*   
+
+### 2022
+
 
 [A Complete Characterization of Linear Estimators for Offline Policy Evaluation](https://arxiv.org/pdf/2203.04236.pdf)    
 **JCP**, Akshay Krishnamurthy, Peter Bartlett, Sham Kakade   
