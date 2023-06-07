@@ -4,22 +4,23 @@ title: Research
 permalink: /research/
 ---
 
+*My PhD Thesis*, [Performative Prediction: Theory and Practice](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-80.pdf)
+
 ### 2023
 
 [Difficult Lessons on Social Prediction from Wisconsin Public Schools](https://arxiv.org/pdf/2304.06205.pdf)  
 **JCP**, Tolani Britton, Moritz Hardt, Rediet Abebe   
 *preprint, 2023*  
 
+[A Complete Characterization of Linear Estimators for Offline Policy Evaluation](https://arxiv.org/pdf/2203.04236.pdf)    
+**JCP**, Akshay Krishnamurthy, Peter Bartlett, Sham Kakade   
+*Journal of Machine Learning Research (JMLR), 2023 (to appear)*       
+
 [Making Decisions under Outcome Performativity](http://arxiv.org/pdf/2210.01745.pdf)   
 Michael P. Kim\*, **JCP**\*    
 *Innovations in Theoretical Computer Science (ITCS) 2023*   
 
 ### 2022
-
-
-[A Complete Characterization of Linear Estimators for Offline Policy Evaluation](https://arxiv.org/pdf/2203.04236.pdf)    
-**JCP**, Akshay Krishnamurthy, Peter Bartlett, Sham Kakade   
-*Journal of Machine Learning Research (JMLR), to appear pending minor revision 2022*        
 
 [Globally Convergent Policy Search over Dynamic Filters for Output Estimation](http://arxiv.org/pdf/2202.11659.pdf)      
 Jack Umenberger, Max Simchowitz, **JCP**, Kaiqing Zhang, Russ Tedrake    
