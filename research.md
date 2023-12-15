@@ -18,7 +18,7 @@ permalink: /research/
 
 [A Complete Characterization of Linear Estimators for Offline Policy Evaluation](https://arxiv.org/pdf/2203.04236.pdf)    
 **JCP**, Akshay Krishnamurthy, Peter Bartlett, Sham Kakade   
-*Journal of Machine Learning Research (JMLR), 2023 (to appear)*       
+*Journal of Machine Learning Research (JMLR), 2023*         
 
 [Making Decisions under Outcome Performativity](http://arxiv.org/pdf/2210.01745.pdf)   
 Michael P. Kim\*, **JCP**\*    
