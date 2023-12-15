@@ -8,6 +8,10 @@ permalink: /research/
 
 ### 2023
 
+[The Relative Value of Prediction in Algorithmic Decision Making](https://arxiv.org/pdf/2312.08511.pdf)   
+**JCP**   
+*preprint, 2023*
+
 [Difficult Lessons on Social Prediction from Wisconsin Public Schools](https://arxiv.org/pdf/2304.06205.pdf)  
 **JCP**, Tolani Britton, Moritz Hardt, Rediet Abebe   
 *preprint, 2023*  
