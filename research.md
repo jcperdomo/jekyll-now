@@ -12,7 +12,7 @@ permalink: /research/
 **JCP**   
 *preprint, 2023*
 
-[Difficult Lessons on Social Prediction from Wisconsin Public Schools](https://arxiv.org/pdf/2304.06205.pdf)  
+[Difficult Lessons on Social Prediction from Wisconsin Public Schools](/pdfs/difficult_lessons.pdf)    
 **JCP**, Tolani Britton, Moritz Hardt, Rediet Abebe   
 *preprint, 2023*  
 
