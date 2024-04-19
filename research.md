@@ -6,11 +6,11 @@ permalink: /research/
 
 *My PhD Thesis*, [Performative Prediction: Theory and Practice](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-80.pdf)
 
-### 2023
+### 2023+
 
 [The Relative Value of Prediction in Algorithmic Decision Making](https://arxiv.org/pdf/2312.08511.pdf)   
 **JCP**   
-*preprint, 2023*
+*non-archival track at Foundations of Responsible Computing (FORC), 2024*
 
 [Difficult Lessons on Social Prediction from Wisconsin Public Schools](/pdfs/difficult_lessons.pdf)    
 **JCP**, Tolani Britton, Moritz Hardt, Rediet Abebe   
