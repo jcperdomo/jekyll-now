@@ -9,7 +9,7 @@ permalink: /research/
 ### 2023+
 
 [Insufficient Statistics Perturbation: Stable Estimators for Private Least Squares](https://arxiv.org/pdf/2404.15409.pdf)  
-The Boston-SEA Party: Brown\*, Hayase\*, Hopkins\*, Kong\*, Liu\*, Oh\*, **Perdomo**\*, Smith\*   
+Gavin Brown\*, Jonathan Hayase\*, Sam Hopkins\*, Weihao Kong\*, Xiyang Liu\*, Seewong Oh\*, **JCP**\*, Adam Smith\*    
 *non-archival track at Foundations of Responsible Computing (FORC), 2024*   
 
 [The Relative Value of Prediction in Algorithmic Decision Making](https://arxiv.org/pdf/2312.08511.pdf)   
