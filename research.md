@@ -14,6 +14,7 @@ Gavin Brown\*, Jonathan Hayase\*, Sam Hopkins\*, Weihao Kong\*, Xiyang Liu\*, Se
 
 [The Relative Value of Prediction in Algorithmic Decision Making](https://arxiv.org/pdf/2312.08511.pdf)   
 **JCP**   
+*International Conference on Machine Learning (ICML) 2024*    
 *non-archival track at Foundations of Responsible Computing (FORC), 2024*
 
 [Difficult Lessons on Social Prediction from Wisconsin Public Schools](/pdfs/difficult_lessons.pdf)    
