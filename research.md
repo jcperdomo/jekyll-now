@@ -10,6 +10,7 @@ permalink: /research/
 
 [Insufficient Statistics Perturbation: Stable Estimators for Private Least Squares](https://arxiv.org/pdf/2404.15409.pdf)  
 Gavin Brown\*, Jonathan Hayase\*, Sam Hopkins\*, Weihao Kong\*, Xiyang Liu\*, Seewong Oh\*, **JCP**\*, Adam Smith\*    
+*Conference on Learning Theory (COLT) 2024*               
 *non-archival track at Foundations of Responsible Computing (FORC), 2024*   
 
 [The Relative Value of Prediction in Algorithmic Decision Making](https://arxiv.org/pdf/2312.08511.pdf)   
