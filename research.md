@@ -10,7 +10,8 @@ permalink: /research/
 
 [Large Scale Transfer Learning for Tabular Data via Language Modeling](https://arxiv.org/pdf/2406.12031)     
 Joshua P. Gardner, **JCP**, Ludwig Schmidt    
-*preprint*   
+*Advances in Neural Information Processing Systems (Neurips) 2024*     
+
 
 [Insufficient Statistics Perturbation: Stable Estimators for Private Least Squares](https://arxiv.org/pdf/2404.15409.pdf)  
 Gavin Brown\*, Jonathan Hayase\*, Sam Hopkins\*, Weihao Kong\*, Xiyang Liu\*, Seewong Oh\*, **JCP**\*, Adam Smith\*    
