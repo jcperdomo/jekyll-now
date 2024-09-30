@@ -8,8 +8,6 @@ permalink: /research/
 
 List of papers ordered chronologically, also see [scholar](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
 
-\* equal contribution, alphabetical ordering 
-
 
 [Large Scale Transfer Learning for Tabular Data via Language Modeling](https://arxiv.org/pdf/2406.12031)     
 Joshua P. Gardner, **JCP**, Ludwig Schmidt    
@@ -77,6 +75,9 @@ Celestine Mendler-Dunner\*, **JCP**\*, Tijana Zrnic\* , and Moritz Hardt
 [Robust Attacks against Multiple Classifiers](https://arxiv.org/pdf/1906.02816.pdf)             
 **JCP**, Yaron Singer   
 *manuscript, 2019*                 
+
+\* equal contribution, alphabetical ordering 
+
   
 
 [Universal Noise Models in Machine Learning](/pdfs/thesis_jcp.pdf)                  
