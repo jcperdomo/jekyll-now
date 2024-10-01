@@ -76,12 +76,13 @@ Celestine Mendler-Dunner\*, **JCP**\*, Tijana Zrnic\* , and Moritz Hardt
 **JCP**, Yaron Singer   
 *manuscript, 2019*                 
 
-\* equal contribution, alphabetical ordering 
-
-  
 
 [Universal Noise Models in Machine Learning](/pdfs/thesis_jcp.pdf)                  
 *undergraduate thesis, awarded the Thomas J. Hoopes Prize* 
+
+
+\* equal contribution, alphabetical ordering 
+
    
 
    
