@@ -12,6 +12,7 @@ List of papers ordered chronologically, also see [scholar](https://scholar.googl
 [Large Scale Transfer Learning for Tabular Data via Language Modeling](https://arxiv.org/pdf/2406.12031)     
 Joshua P. Gardner, **JCP**, Ludwig Schmidt    
 *Advances in Neural Information Processing Systems (Neurips) 2024*     
+[[Model]](https://huggingface.co/mlfoundations/tabula-8b)  [[Code]](https://github.com/mlfoundations/rtfm)   
 
 
 [Insufficient Statistics Perturbation: Stable Estimators for Private Least Squares](https://arxiv.org/pdf/2404.15409.pdf)  
