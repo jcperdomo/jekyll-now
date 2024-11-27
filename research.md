@@ -8,7 +8,7 @@ permalink: /research/
 
 List of papers ordered chronologically, also see [scholar](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
 
-[From Fairness to Infinity: Outcome-Indistinguishable (Omni)Prediction in Evolving Graphs](https://arxiv.org/pdf/2411.17582)
+[From Fairness to Infinity: Outcome-Indistinguishable (Omni)Prediction in Evolving Graphs](https://arxiv.org/pdf/2411.17582)    
 Cynthia Dwork\*, Chris Hays\*, Nicole Immorlica\*, **JCP**\*, Pranay Tankala   
 *preprint, 2024*   
 
