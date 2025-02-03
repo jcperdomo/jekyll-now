@@ -8,7 +8,7 @@ permalink: /research/
 
 List of papers ordered chronologically, also see [scholar](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
 
-[The Value of Predictin in Identifying the Worst-Off](https://arxiv.org/pdf/2501.19334)     
+[The Value of Prediction in Identifying the Worst-Off](https://arxiv.org/pdf/2501.19334)     
 Unai Fischer-Abaigar, Cristoph Kern, **JCP**    
 *preprint, 2025*   
 
