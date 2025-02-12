@@ -8,7 +8,7 @@ permalink: /research/
 
 List of papers ordered chronologically, also see [scholar](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
 
-[Revisiting the Predictability of Social Events](jcperdomo.org)
+[Revisiting the Predictability of Social Events](jcperdomo.org)  
 **JCP**  
 *available soon, 2025*   
 
