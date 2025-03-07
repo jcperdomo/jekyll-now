@@ -11,6 +11,10 @@ List of papers ordered chronologically, also see [scholar](https://scholar.googl
 [Revisiting the Predictability of Social Events](jcperdomo.org)  
 **JCP**  
 *available soon, 2025*   
+ 
+[Inducing Efficient and Equitable Professional Networks through Link Recommendations](https://arxiv.org/pdf/2503.04542)       
+Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*      
+*preprint, 2025*     
 
 [The Value of Prediction in Identifying the Worst-Off](https://arxiv.org/pdf/2501.19334)     
 Unai Fischer-Abaigar, Cristoph Kern, **JCP**    
