@@ -8,9 +8,9 @@ permalink: /research/
 
 List of papers ordered chronologically, also see [scholar](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
 
-[Revisiting the Predictability of Social Events](jcperdomo.org)  
+[Revisiting the Predictability of Performative, Social Events](jcperdomo.org/pdfs/revisiting.pdf)  
 **JCP**  
-*available soon, 2025*   
+*preprint, 2025*   
  
 [Inducing Efficient and Equitable Professional Networks through Link Recommendations](https://arxiv.org/pdf/2503.04542)       
 Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*      
