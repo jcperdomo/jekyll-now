@@ -8,7 +8,7 @@ permalink: /research/
 
 List of papers ordered chronologically, also see [scholar](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
 
-[Revisiting the Predictability of Performative, Social Events](jcperdomo.org/pdfs/revisiting.pdf)  
+[Revisiting the Predictability of Performative, Social Events](/pdfs/revisiting.pdf)  
 **JCP**  
 *preprint, 2025*   
  
