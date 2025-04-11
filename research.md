@@ -20,6 +20,10 @@ Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*
 Unai Fischer-Abaigar, Cristoph Kern, **JCP**    
 *preprint, 2025*   
 
+[Difficult Lessons on Social Prediction from Wisconsin Public Schools](/pdfs/difficult_lessons.pdf)    
+**JCP**, Tolani Britton, Moritz Hardt, Rediet Abebe   
+*ACM Conference on Fairness, Accountability, and Transparency, FAccT 2025*    
+
 [From Fairness to Infinity: Outcome-Indistinguishable (Omni)Prediction in Evolving Graphs](https://arxiv.org/pdf/2411.17582)    
 Cynthia Dwork\*, Chris Hays\*, Nicole Immorlica\*, **JCP**\*, Pranay Tankala\*   
 *preprint, 2024*   
@@ -40,11 +44,6 @@ Gavin Brown\*, Jonathan Hayase\*, Sam Hopkins\*, Weihao Kong\*, Xiyang Liu\*, Se
 **JCP**   
 *International Conference on Machine Learning (ICML) 2024*    
 *non-archival track at Foundations of Responsible Computing (FORC), 2024*
-
-
-[Difficult Lessons on Social Prediction from Wisconsin Public Schools](/pdfs/difficult_lessons.pdf)    
-**JCP**, Tolani Britton, Moritz Hardt, Rediet Abebe   
-*under review, 2023*  
 
 
 [A Complete Characterization of Linear Estimators for Offline Policy Evaluation](https://arxiv.org/pdf/2203.04236.pdf)    
