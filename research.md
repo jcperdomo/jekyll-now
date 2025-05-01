@@ -18,7 +18,8 @@ Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*
 
 [The Value of Prediction in Identifying the Worst-Off](https://arxiv.org/pdf/2501.19334)     
 Unai Fischer-Abaigar, Cristoph Kern, **JCP**    
-*International Conference on Machine Learning (ICML), 2025* **spotlight**     
+*International Conference on Machine Learning (ICML), 2025* **[spotlight award]**     
+*Foundations of Responsible Computing (FORC), 2025* **[highlights track]**     
 
 [Difficult Lessons on Social Prediction from Wisconsin Public Schools](/pdfs/difficult_lessons.pdf)    
 **JCP**, Tolani Britton, Moritz Hardt, Rediet Abebe   
