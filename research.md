@@ -6,7 +6,9 @@ permalink: /research/
 
 *My PhD Thesis*, [Performative Prediction: Theory and Practice](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-80.pdf)
 
-List of papers ordered chronologically, also see [scholar](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
+[Google Scholar](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
+
+ <ins>List of papers ordered chronologically:</ins>
 
 [Revisiting the Predictability of Performative, Social Events](https://jcperdomo.org/pdfs/revisiting.pdf)  
 **JCP**  
