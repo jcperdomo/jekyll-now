@@ -10,7 +10,7 @@ List of papers ordered chronologically, also see [scholar](https://scholar.googl
 
 [Revisiting the Predictability of Performative, Social Events](https://jcperdomo.org/pdfs/revisiting.pdf)  
 **JCP**  
-*International Conference on Machine Learning, ICML 2025*   
+*International Conference on Machine Learning (ICML), 2025*   
  
 [Inducing Efficient and Equitable Professional Networks through Link Recommendations](https://arxiv.org/pdf/2503.04542)       
 Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*      
@@ -18,11 +18,11 @@ Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*
 
 [The Value of Prediction in Identifying the Worst-Off](https://arxiv.org/pdf/2501.19334)     
 Unai Fischer-Abaigar, Cristoph Kern, **JCP**    
-*International Conference on Machine Learning, ICML 2025 (spotlight)*     
+*International Conference on Machine Learning (ICML), 2025* **spotlight**     
 
 [Difficult Lessons on Social Prediction from Wisconsin Public Schools](/pdfs/difficult_lessons.pdf)    
 **JCP**, Tolani Britton, Moritz Hardt, Rediet Abebe   
-*ACM Conference on Fairness, Accountability, and Transparency, FAccT 2025*    
+*ACM Conference on Fairness, Accountability, and Transparency (FAccT), 2025*    
 
 [From Fairness to Infinity: Outcome-Indistinguishable (Omni)Prediction in Evolving Graphs](https://arxiv.org/pdf/2411.17582)    
 Cynthia Dwork\*, Chris Hays\*, Nicole Immorlica\*, **JCP**\*, Pranay Tankala\*   
@@ -30,7 +30,7 @@ Cynthia Dwork\*, Chris Hays\*, Nicole Immorlica\*, **JCP**\*, Pranay Tankala\*
 
 [Large Scale Transfer Learning for Tabular Data via Language Modeling](https://arxiv.org/pdf/2406.12031)     
 Joshua P. Gardner, **JCP**, Ludwig Schmidt    
-*Advances in Neural Information Processing Systems (Neurips) 2024*     
+*Advances in Neural Information Processing Systems (Neurips), 2024*     
 [[Model]](https://huggingface.co/mlfoundations/tabula-8b)  [[Code]](https://github.com/mlfoundations/rtfm)   
 
 
