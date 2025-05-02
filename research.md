@@ -8,7 +8,7 @@ permalink: /research/
 
 [Google Scholar](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
 
- <ins>List of papers ordered chronologically:</ins>
+ <ins>List of Papers:</ins>
 
 [Revisiting the Predictability of Performative, Social Events](https://jcperdomo.org/pdfs/revisiting.pdf)  
 **JCP**  
