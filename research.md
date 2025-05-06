@@ -90,7 +90,7 @@ Celestine Mendler-Dunner\*, **JCP**\*, Tijana Zrnic\* , and Moritz Hardt
 
 [Robust Attacks against Multiple Classifiers](https://arxiv.org/pdf/1906.02816.pdf)             
 **JCP**, Yaron Singer   
-*manuscript, 2019*                 
+*manuscript 2019*                 
 
 \* equal contribution, or alphabetical ordering 
 
