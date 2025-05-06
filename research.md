@@ -6,7 +6,7 @@ permalink: /research/
 
 *My PhD Thesis*, [Performative Prediction: Theory and Practice](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-80.pdf)
 
-[Google Scholar](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
+*My google scholar,* [[link]](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
 
  <ins>**List of Papers:**</ins>
 
@@ -92,7 +92,7 @@ Celestine Mendler-Dunner\*, **JCP**\*, Tijana Zrnic\* , and Moritz Hardt
 **JCP**, Yaron Singer   
 *manuscript, 2019*                 
 
-\* equal contribution, alphabetical ordering 
+\* equal contribution, or alphabetical ordering 
 
    
 
