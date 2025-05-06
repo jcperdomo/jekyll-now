@@ -16,42 +16,40 @@ permalink: /research/
  
 [Inducing Efficient and Equitable Professional Networks through Link Recommendations](https://arxiv.org/pdf/2503.04542)       
 Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*      
-*preprint, 2025*     
+*preprint 2025*     
 
 [The Value of Prediction in Identifying the Worst-Off](https://arxiv.org/pdf/2501.19334)     
 Unai Fischer-Abaigar, Cristoph Kern, **JCP**    
-*International Conference on Machine Learning (ICML), 2025* **[spotlight award]**     
-*Foundations of Responsible Computing (FORC), 2025* **[highlights track]**     
-
-[Difficult Lessons on Social Prediction from Wisconsin Public Schools](/pdfs/difficult_lessons.pdf)    
-**JCP**, Tolani Britton, Moritz Hardt, Rediet Abebe   
-*ACM Conference on Fairness, Accountability, and Transparency (FAccT), 2025*    
+*International Conference on Machine Learning (ICML) 2025* **[spotlight award]**     
+*Foundations of Responsible Computing (FORC) 2025* **[highlights track]**     
 
 [From Fairness to Infinity: Outcome-Indistinguishable (Omni)Prediction in Evolving Graphs](https://arxiv.org/pdf/2411.17582)    
 Cynthia Dwork\*, Chris Hays\*, Nicole Immorlica\*, **JCP**\*, Pranay Tankala\*   
-*preprint, 2024*   
+*Conference on Learning Theory (COLT) 2025*   
+
+[Difficult Lessons on Social Prediction from Wisconsin Public Schools](/pdfs/difficult_lessons.pdf)    
+**JCP**, Tolani Britton, Moritz Hardt, Rediet Abebe   
+*ACM Conference on Fairness, Accountability, and Transparency (FAccT) 2025*    
 
 [Large Scale Transfer Learning for Tabular Data via Language Modeling](https://arxiv.org/pdf/2406.12031)     
 Joshua P. Gardner, **JCP**, Ludwig Schmidt    
-*Advances in Neural Information Processing Systems (Neurips), 2024*     
+*Advances in Neural Information Processing Systems (Neurips) 2024*     
 [[Model]](https://huggingface.co/mlfoundations/tabula-8b)  [[Code]](https://github.com/mlfoundations/rtfm)   
-
 
 [Insufficient Statistics Perturbation: Stable Estimators for Private Least Squares](https://arxiv.org/pdf/2404.15409.pdf)  
 Gavin Brown\*, Jonathan Hayase\*, Sam Hopkins\*, Weihao Kong\*, Xiyang Liu\*, Seewong Oh\*, **JCP**\*, Adam Smith\*    
 *Conference on Learning Theory (COLT) 2024*               
-*non-archival track at Foundations of Responsible Computing (FORC), 2024*   
-
+*non-archival track at Foundations of Responsible Computing (FORC) 2024*   
 
 [The Relative Value of Prediction in Algorithmic Decision Making](https://arxiv.org/pdf/2312.08511.pdf)   
 **JCP**   
 *International Conference on Machine Learning (ICML) 2024*    
-*non-archival track at Foundations of Responsible Computing (FORC), 2024*
+*non-archival track at Foundations of Responsible Computing (FORC) 2024*
 
 
 [A Complete Characterization of Linear Estimators for Offline Policy Evaluation](https://arxiv.org/pdf/2203.04236.pdf)    
 **JCP**, Akshay Krishnamurthy, Peter Bartlett, Sham Kakade   
-*Journal of Machine Learning Research (JMLR), 2023*         
+*Journal of Machine Learning Research (JMLR) 2023*         
 
 
 [Making Decisions under Outcome Performativity](http://arxiv.org/pdf/2210.01745.pdf)   
@@ -93,11 +91,6 @@ Celestine Mendler-Dunner\*, **JCP**\*, Tijana Zrnic\* , and Moritz Hardt
 [Robust Attacks against Multiple Classifiers](https://arxiv.org/pdf/1906.02816.pdf)             
 **JCP**, Yaron Singer   
 *manuscript, 2019*                 
-
-
-[Universal Noise Models in Machine Learning](/pdfs/thesis_jcp.pdf)                  
-*undergraduate thesis, awarded the Thomas J. Hoopes Prize* 
-
 
 \* equal contribution, alphabetical ordering 
 
