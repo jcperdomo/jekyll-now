@@ -285,6 +285,18 @@ footer {
   text-align: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap');
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-top: 0.5em;
+  color: #333333;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
