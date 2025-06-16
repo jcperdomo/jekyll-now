@@ -8,8 +8,12 @@ permalink: /research/
 
 *My Google Scholar,* [link](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
 
+[In Defense of Defensive Forecasting](http://arxiv.org/abs/2506.11848)
+**JCP**, Benjamin Recht
+*preprint, 2025*
+
 [Revisiting the Predictability of Performative, Social Events](https://jcperdomo.org/pdfs/revisiting.pdf)  
-**JCP**  
+**JCP**
 *International Conference on Machine Learning (ICML), 2025*   
  
 [Inducing Efficient and Equitable Professional Networks through Link Recommendations](https://arxiv.org/pdf/2503.04542)       
