@@ -9,7 +9,7 @@ permalink: /research/
 *My Google Scholar,* [link](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
 
 [In Defense of Defensive Forecasting](http://arxiv.org/abs/2506.11848)
-**JCP**, Benjamin Recht     
+**JCP**\*, Benjamin Recht\*      
 *preprint, 2025*
 
 [Revisiting the Predictability of Performative, Social Events](https://jcperdomo.org/pdfs/revisiting.pdf)  
