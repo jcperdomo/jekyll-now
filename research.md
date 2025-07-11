@@ -12,7 +12,7 @@ permalink: /research/
 **JCP**\*, Benjamin Recht\*      
 *preprint, 2025*
 
-[Revisiting the Predictability of Performative, Social Events](https://jcperdomo.org/pdfs/revisiting.pdf)  
+[Revisiting the Predictability of Performative, Social Events](https://arxiv.org/pdf/2503.11713)  
 **JCP**    
 *International Conference on Machine Learning (ICML), 2025*   
  
