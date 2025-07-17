@@ -22,7 +22,7 @@ Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*
 
 [The Value of Prediction in Identifying the Worst-Off](https://arxiv.org/pdf/2501.19334)     
 Unai Fischer-Abaigar, Cristoph Kern, **JCP**    
-*International Conference on Machine Learning (ICML) 2025* **[oral, top ~1% of papers]**     
+*International Conference on Machine Learning (ICML) 2025* **[Outstanding Paper Award]**     
 *Foundations of Responsible Computing (FORC) 2025* **[highlights track]**     
 
 [From Fairness to Infinity: Outcome-Indistinguishable (Omni)Prediction in Evolving Graphs](https://arxiv.org/pdf/2411.17582)    
