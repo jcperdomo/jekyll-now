@@ -1,24 +1,22 @@
 ---
 layout: page
-title: Research
+title: Publications
 permalink: /research/
 ---
 
-*My PhD Thesis*, [Performative Prediction: Theory and Practice](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-80.pdf)
-
-*My Google Scholar,* [link](https://scholar.google.com/citations?user=TeBmXz4AAAAJ&hl=en&oi=ao) 
+## Publications
 
 [In Defense of Defensive Forecasting](http://arxiv.org/abs/2506.11848)     
 **JCP**\*, Benjamin Recht\*      
 *preprint, 2025*
 
+[Inducing Efficient and Equitable Professional Networks through Link Recommendations](https://arxiv.org/pdf/2503.04542)       
+Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*      
+*preprint, 2025*     
+
 [Revisiting the Predictability of Performative, Social Events](https://arxiv.org/pdf/2503.11713)  
 **JCP**    
 *International Conference on Machine Learning (ICML), 2025*   
- 
-[Inducing Efficient and Equitable Professional Networks through Link Recommendations](https://arxiv.org/pdf/2503.04542)       
-Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*      
-*preprint 2025*     
 
 [The Value of Prediction in Identifying the Worst-Off](https://arxiv.org/pdf/2501.19334)     
 Unai Fischer-Abaigar, Cristoph Kern, **JCP**    
@@ -94,8 +92,12 @@ Celestine Mendler-Dunner\*, **JCP**\*, Tijana Zrnic\* , and Moritz Hardt
 **JCP**, Yaron Singer   
 *manuscript 2019*                 
 
-\* equal contribution, or alphabetical ordering 
+## PhD Thesis
 
-   
+[Performative Prediction: Theory and Practice](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2023/EECS-2023-80.pdf)  
+**JCP**  
+*PhD Thesis, University of California, Berkeley*
 
-   
+---
+
+\* equal contribution, or alphabetical ordering
