@@ -8,11 +8,11 @@ permalink: /research/
 
 [In Defense of Defensive Forecasting](http://arxiv.org/abs/2506.11848)     
 **JCP**\*, Benjamin Recht\*      
-*preprint, 2025*
+*under submission, 2025*   
 
 [Inducing Efficient and Equitable Professional Networks through Link Recommendations](https://arxiv.org/pdf/2503.04542)       
 Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*      
-*preprint, 2025*     
+*Foundations of Responsible Computing (FORC), 2026*       
 
 [Revisiting the Predictability of Performative, Social Events](https://arxiv.org/pdf/2503.11713)  
 **JCP**    
