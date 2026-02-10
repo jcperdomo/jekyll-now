@@ -6,6 +6,10 @@ permalink: /research/
 
 ## Publications
 
+[Empirically Understanding the Value of Prediction in Allocation](https://arxiv.org/pdf/2602.08786)    
+Unai Fischer-Abaigar, Emily Aiken, Cristoph Kern, **JCP**   
+*preprint, 2026*   
+
 [In Defense of Defensive Forecasting](http://arxiv.org/abs/2506.11848)     
 **JCP**\*, Benjamin Recht\*      
 *under submission, 2025*   
