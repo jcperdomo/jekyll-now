@@ -7,7 +7,7 @@ permalink: /research/
 ## Publications
 
 [Defensive Generation](https://arxiv.org/pdf/2602.21390)   
-Gabriele Farina, **JCP**   
+Gabriele Farina\*, **JCP**\*     
 *preprint, 2026*   
 
 [Empirically Understanding the Value of Prediction in Allocation](https://arxiv.org/pdf/2602.08786)    
