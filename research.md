@@ -6,7 +6,7 @@ permalink: /research/
 
 ## Publications
 
-[Defensive Generation](https://arxiv.org/abs/2602.21390)   
+[Defensive Generation](https://arxiv.org/pdf/2602.21390)   
 Gabriele Farina, **JCP**   
 *preprint, 2026*   
 
