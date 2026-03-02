@@ -6,6 +6,10 @@ permalink: /research/
 
 ## Publications
 
+[The Stability of Online Algorithms in Performative Prediction](https://arxiv.org/pdf/2602.24207)   
+Gabriele Farina\*, **JCP**\*     
+*preprint, 2026*  
+
 [Defensive Generation](https://arxiv.org/pdf/2602.21390)   
 Gabriele Farina\*, **JCP**\*     
 *preprint, 2026*   
