@@ -14,7 +14,7 @@ Gabriele Farina\*, **JCP**\*
 Gabriele Farina\*, **JCP**\*     
 *preprint, 2026*   
 
-[Empirically Understanding the Value of Prediction in Allocation](https://arxiv.org/pdf/2602.08786)   [(package)](https://github.com/unai-fa/relative-value-of-prediction)   
+[Empirically Understanding the Value of Prediction in Allocation](https://arxiv.org/pdf/2602.08786)   [(software toolkit)](https://github.com/unai-fa/relative-value-of-prediction)   
 
 Unai Fischer-Abaigar, Emily Aiken, Cristoph Kern, **JCP**   
 *preprint, 2026*   
