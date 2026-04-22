@@ -6,17 +6,21 @@ permalink: /research/
 
 ## Publications
 
+[An Efficient Black-Box Reduction from Online Learning to Multicalibration, and a New Route to Φ-Regret Minimization](https://arxiv.org/abs/2604.19592)   
+Gabriele Farina\*, **JCP**\*      
+*preprint, 2026*  
+
 [The Stability of Online Algorithms in Performative Prediction](https://arxiv.org/pdf/2602.24207)   
 Gabriele Farina\*, **JCP**\*     
 *preprint, 2026*  
 
-[Defensive Generation](https://arxiv.org/pdf/2602.21390)   
-Gabriele Farina\*, **JCP**\*     
-*preprint, 2026*   
-
 [Empirically Understanding the Value of Prediction in Allocation](https://arxiv.org/pdf/2602.08786)   [(Toolkit)](https://github.com/unai-fa/relative-value-of-prediction)   
 Unai Fischer-Abaigar, Emily Aiken, Cristoph Kern, **JCP**   
 *preprint, 2026*   
+
+[Defensive Generation](https://arxiv.org/pdf/2602.21390)   
+Gabriele Farina\*, **JCP**\*     
+*Foundations of Responsible Computing (FORC) 2026* **[highlights track]**     
 
 [In Defense of Defensive Forecasting](http://arxiv.org/abs/2506.11848)     
 **JCP**\*, Benjamin Recht\*      
