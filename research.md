@@ -20,7 +20,8 @@ Unai Fischer-Abaigar, Emily Aiken, Cristoph Kern, **JCP**
 
 [Defensive Generation](https://arxiv.org/pdf/2602.21390)   
 Gabriele Farina\*, **JCP**\*     
-*Foundations of Responsible Computing (FORC) 2026* **[highlights track]**     
+*Foundations of Responsible Computing (FORC), 2026* **[highlights track]**  
+*Conference on Learning Theory (COLT), 2026*   
 
 [In Defense of Defensive Forecasting](http://arxiv.org/abs/2506.11848)     
 **JCP**\*, Benjamin Recht\*      
