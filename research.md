@@ -29,7 +29,7 @@ Gabriele Farina\*, **JCP**\*
 
 [Inducing Efficient and Equitable Professional Networks through Link Recommendations](https://arxiv.org/pdf/2503.04542)       
 Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*      
-*Foundations of Responsible Computing (FORC), 2026*       
+*Foundations of Responsible Computing (FORC), 2026* **[Best Student Paper Award]**         
 
 [Revisiting the Predictability of Performative, Social Events](https://arxiv.org/pdf/2503.11713)  
 **JCP**    
