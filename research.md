@@ -29,7 +29,7 @@ Gabriele Farina\*, **JCP**\*
 
 [Inducing Efficient and Equitable Professional Networks through Link Recommendations](https://arxiv.org/pdf/2503.04542)       
 Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*      
-*Foundations of Responsible Computing (FORC), 2026* **[Best Student Paper Award]**         
+*Foundations of Responsible Computing (FORC), 2026*   **[Best Student Paper Award 🏆]**         
 
 [Revisiting the Predictability of Performative, Social Events](https://arxiv.org/pdf/2503.11713)  
 **JCP**    
@@ -37,7 +37,7 @@ Cynthia Dwork\*, Chris Hays\*, Lunjia Hu\*, Nicole Immorlica\*, **JCP**\*
 
 [The Value of Prediction in Identifying the Worst-Off](https://arxiv.org/pdf/2501.19334)     
 Unai Fischer-Abaigar, Cristoph Kern, **JCP**    
-*International Conference on Machine Learning (ICML) 2025* **[Outstanding Paper Award]**     
+*International Conference on Machine Learning (ICML) 2025* **[Outstanding Paper Award 🏆]**     
 *Foundations of Responsible Computing (FORC) 2025* **[highlights track]**     
 
 [From Fairness to Infinity: Outcome-Indistinguishable (Omni)Prediction in Evolving Graphs](https://arxiv.org/pdf/2411.17582)    
