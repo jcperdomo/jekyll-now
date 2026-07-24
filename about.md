@@ -6,7 +6,7 @@ title: About
 <div class="bio-content">
   <h1>Biography</h1>
 <p>
-Juan Carlos Perdomo is a postdoctoral fellow at MIT, hosted by Sendhil Mullainathan, and will join New York University as an assistant professor of computer science and data science in the fall of 2026. His research focuses on the foundations of machine learning systems that make predictions or decisions about people. He earned his Ph.D. in Electrical Engineering and Computer Science from UC Berkeley, where he was co-advised by Peter Bartlett and Moritz Hardt, and his B.A. in CS and Math from Harvard. Before MIT, he was a CRCS Postdoctoral Fellow at Harvard where he was hosted by Cynthia Dwork.
+Juan Carlos Perdomo is an assistant professor of computer science and data science at NYU. His research focuses on the foundations of machine learning systems that make predictions or decisions about people. He earned his Ph.D. in Electrical Engineering and Computer Science from UC Berkeley and his B.A. in CS and Math from Harvard. Before NYU, he was a postdoctoral fellow at Harvard and MIT.
 </p>
 
 <p>
