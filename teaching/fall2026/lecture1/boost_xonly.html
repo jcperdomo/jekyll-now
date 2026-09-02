@@ -24,9 +24,9 @@
   <h1>Animation &mdash; distinguishers that depend only on <em>x</em></h1>
 
   <p>The BOOST procedure with <em>&epsilon; = 0.05</em> and the class of tests
-     &#8497; = {1, <em>x</em>, <em>x</em>&sup2;, <em>x</em>&sup3;,
-     <em>x</em>&thinsp;cos&thinsp;<em>x</em>}, each depending only on <em>x</em>
-     and normalized to unit norm. At each step the
+     F={1, <em>x</em>, <em>x</em>&sup2;, <em>x</em>&sup3;,
+     <em>x</em>&thinsp;cos&thinsp;<em>x</em>}, each depending only on <em>x</em>.
+    At each step the
      <span style="color:#e8743b"><strong>orange</strong></span> bar is the test
      selected for the update (the largest violator); the procedure halts when
      every test is inside the &plusmn;&epsilon; band.</p>
@@ -35,18 +35,11 @@
     <img src="boost_xonly.gif" alt="Boosting animation with x-only tests, per-test error, and L2 error">
     <figcaption>Left: target <em>p</em><sup>*</sup> and model <em>p<sub>t</sub></em>.
       Middle: the indistinguishability error of each test,
-      |E[&thinsp;<em>f</em>&thinsp;&middot;&thinsp;(<em>p<sub>t</sub></em>&nbsp;&minus;&nbsp;<em>p</em><sup>*</sup>)]|,
-      vs the &plusmn;&epsilon; band.
-      Right: the distance &#8741;<em>p</em><sup>*</sup>&thinsp;&minus;&thinsp;<em>p<sub>t</sub></em>&#8741;<sub>2</sub>
-      per iteration.</figcaption>
+
+      Right: the l2 distance between the truth and the model</figcaption>
   </figure>
 
-  <p>The model is forced into the span of five smooth functions, so it cannot
-     capture the sharp jumps in <em>p</em><sup>*</sup>. Note that while the
-     squared distance to the target decreases monotonically, the per-test errors
-     do not: an update along one test can push another test's error back up. The
-     distance decreases and then <strong>plateaus near 0.28</strong> &mdash; the
-     best this class can do. The
+  <p>The
      <a href="boost_binning.html">companion animation</a> runs the same procedure
      with a class that also contains tests of the model's output
      <em>p</em>(<em>x</em>), and reaches a lower distance.</p>
