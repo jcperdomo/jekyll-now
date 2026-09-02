@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animation &mdash; distinguishers that see the model's output</title>
+<style>
+  body { font-family: Georgia, "Times New Roman", serif; color: #1f2328;
+         max-width: 980px; margin: 0 auto; padding: 2rem 1.2rem 4rem; line-height: 1.55; }
+  h1 { font-size: 1.5rem; border-bottom: 2px solid #d8dee9; padding-bottom: .4rem; }
+  .nav { font-family: -apple-system, system-ui, sans-serif; font-size: .9rem; margin-bottom: 1.2rem; }
+  .nav a { color: #3b5b92; text-decoration: none; margin-right: 1rem; }
+  figure { text-align: center; margin: 1.5rem 0; }
+  figure img { max-width: 100%; height: auto; border: 1px solid #e3e7ee; border-radius: 6px; }
+  figcaption { font-size: .92rem; color: #555; margin-top: .6rem; }
+</style>
+</head>
+<body>
+  <div class="nav">
+    &#8592; <a href="https://jcperdomo.org/teaching/modern-paradigms/">Back to the course page</a>
+    &nbsp;|&nbsp; Compare: <a href="boost_xonly.html">distinguishers that depend only on x &#8594;</a>
+  </div>
+
+  <h1>Animation &mdash; distinguishers that see the model's output</h1>
+
+  <p>The BOOST procedure with <em>&epsilon; = 0.05</em> on the same target as the
+     <a href="boost_xonly.html">companion animation</a>, but the class of tests
+     now also contains functions of the model's output: the level-set indicators
+     1{<em>p</em>(<em>x</em>)&thinsp;&isin;&thinsp;<em>B</em>} for buckets
+     <em>B</em> partitioning [&minus;1,&thinsp;1]
+     (<span style="color:#c6b0e0"><strong>purple</strong></span> bars), alongside
+     the five tests that depend only on <em>x</em>
+     (<span style="color:#9ecae1"><strong>blue</strong></span> bars). At each step
+     the <span style="color:#e8743b"><strong>orange</strong></span> bar is the
+     test selected for the update; the procedure halts when every test in the
+     larger class is inside the &plusmn;&epsilon; band.</p>
+
+  <figure>
+    <img src="boost_binning.gif" alt="Boosting animation with tests of x and the model's output, per-test error, and L2 error">
+    <figcaption>Left: target <em>p</em><sup>*</sup> and model <em>p<sub>t</sub></em>.
+      Middle: the indistinguishability error of each test,
+      |E[&thinsp;<em>f</em>&thinsp;&middot;&thinsp;(<em>p<sub>t</sub></em>&nbsp;&minus;&nbsp;<em>p</em><sup>*</sup>)]|,
+      vs the &plusmn;&epsilon; band.
+      Right: the distance &#8741;<em>p</em><sup>*</sup>&thinsp;&minus;&thinsp;<em>p<sub>t</sub></em>&#8741;<sub>2</sub>
+      per iteration.</figcaption>
+  </figure>
+
+  <p>Because the level-set tests examine the model's own predictions, each update
+     is a function of the current model &mdash; the resulting model is a
+     <strong>deep</strong> sequential circuit rather than the wide, depth-1 linear
+     combination produced by <em>x</em>-only tests. The payoff is visible in the
+     distance to the target: where the <em>x</em>-only class plateaus near 0.28,
+     the richer class descends to <strong>&asymp; 0.22</strong>.</p>
+</body>
+</html>

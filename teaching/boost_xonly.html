@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animation &mdash; distinguishers that depend only on x</title>
+<style>
+  body { font-family: Georgia, "Times New Roman", serif; color: #1f2328;
+         max-width: 980px; margin: 0 auto; padding: 2rem 1.2rem 4rem; line-height: 1.55; }
+  h1 { font-size: 1.5rem; border-bottom: 2px solid #d8dee9; padding-bottom: .4rem; }
+  .nav { font-family: -apple-system, system-ui, sans-serif; font-size: .9rem; margin-bottom: 1.2rem; }
+  .nav a { color: #3b5b92; text-decoration: none; margin-right: 1rem; }
+  figure { text-align: center; margin: 1.5rem 0; }
+  figure img { max-width: 100%; height: auto; border: 1px solid #e3e7ee; border-radius: 6px; }
+  figcaption { font-size: .92rem; color: #555; margin-top: .6rem; }
+</style>
+</head>
+<body>
+  <div class="nav">
+    &#8592; <a href="https://jcperdomo.org/teaching/modern-paradigms/">Back to the course page</a>
+    &nbsp;|&nbsp; Compare: <a href="boost_binning.html">distinguishers that see the model's output &#8594;</a>
+  </div>
+
+  <h1>Animation &mdash; distinguishers that depend only on <em>x</em></h1>
+
+  <p>The BOOST procedure with <em>&epsilon; = 0.05</em> and the class of tests
+     &#8497; = {1, <em>x</em>, <em>x</em>&sup2;, <em>x</em>&sup3;,
+     <em>x</em>&thinsp;cos&thinsp;<em>x</em>}, each depending only on <em>x</em>
+     and normalized to unit norm. At each step the
+     <span style="color:#e8743b"><strong>orange</strong></span> bar is the test
+     selected for the update (the largest violator); the procedure halts when
+     every test is inside the &plusmn;&epsilon; band.</p>
+
+  <figure>
+    <img src="boost_xonly.gif" alt="Boosting animation with x-only tests, per-test error, and L2 error">
+    <figcaption>Left: target <em>p</em><sup>*</sup> and model <em>p<sub>t</sub></em>.
+      Middle: the indistinguishability error of each test,
+      |E[&thinsp;<em>f</em>&thinsp;&middot;&thinsp;(<em>p<sub>t</sub></em>&nbsp;&minus;&nbsp;<em>p</em><sup>*</sup>)]|,
+      vs the &plusmn;&epsilon; band.
+      Right: the distance &#8741;<em>p</em><sup>*</sup>&thinsp;&minus;&thinsp;<em>p<sub>t</sub></em>&#8741;<sub>2</sub>
+      per iteration.</figcaption>
+  </figure>
+
+  <p>The model is forced into the span of five smooth functions, so it cannot
+     capture the sharp jumps in <em>p</em><sup>*</sup>. Note that while the
+     squared distance to the target decreases monotonically, the per-test errors
+     do not: an update along one test can push another test's error back up. The
+     distance decreases and then <strong>plateaus near 0.28</strong> &mdash; the
+     best this class can do. The
+     <a href="boost_binning.html">companion animation</a> runs the same procedure
+     with a class that also contains tests of the model's output
+     <em>p</em>(<em>x</em>), and reaches a lower distance.</p>
+</body>
+</html>
