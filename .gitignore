@@ -9,3 +9,6 @@ Gemfile
 Gemfile.lock
 node_modules
 package.json
+
+# Global ~/.gitignore_global blocks all *.pdf; keep teaching PDFs tracked
+!teaching/**/*.pdf
