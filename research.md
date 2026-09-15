@@ -6,6 +6,10 @@ permalink: /research/
 
 ## Publications
 
+[Stabilizing Performative Feedback Loops with Minimal Model Deployments](https://arxiv.org/pdf/2609.14065)   
+Gabriele Farina\*, **JCP**\*      
+*preprint, 2026*  
+
 [An Efficient Black-Box Reduction from Online Learning to Multicalibration, and a New Route to Φ-Regret Minimization](https://arxiv.org/abs/2604.19592)   
 Gabriele Farina\*, **JCP**\*      
 *preprint, 2026*  
