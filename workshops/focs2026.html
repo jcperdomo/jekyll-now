@@ -1,0 +1,144 @@
+---
+layout: default
+title: Performative Prediction Workshop @ FOCS 2026
+permalink: /workshops/focs2026/
+---
+
+<style>
+  .workshop-header {
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+  }
+
+  .workshop-header h1 {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: #1a1a1a;
+    margin: 0 0 0.4em 0;
+    padding: 0;
+    border: none;
+  }
+
+  .workshop-header .workshop-meta {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1em;
+    color: #333333;
+    margin: 0.2em 0;
+  }
+
+  .workshop-sections .section ul { margin: 0.6em 0; }
+  .workshop-sections .section li { margin: 0.5em 0; line-height: 1.55; }
+
+  table.schedule {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.95em;
+    margin: 1em 0;
+  }
+
+  table.schedule th {
+    text-align: left;
+    font-weight: 600;
+    color: #1a1a1a;
+    border-bottom: 2px solid #1a4a7a;
+    padding: 0.6em 0.8em;
+  }
+
+  table.schedule td {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0.6em 0.8em;
+    vertical-align: top;
+    color: #333333;
+    line-height: 1.5;
+  }
+
+  table.schedule td a { color: #1a4a7a; text-decoration: none; }
+  table.schedule td a:hover { text-decoration: underline; }
+
+  table.schedule th.session, table.schedule td.session { width: 8em; white-space: nowrap; }
+  table.schedule th.speaker, table.schedule td.speaker { width: 14em; }
+
+  .workshop-figure {
+    margin: 0 0 2em 0;
+    text-align: center;
+  }
+  .workshop-figure img {
+    display: block;
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+  }
+
+  .workshop-note {
+    font-size: 0.9em;
+    color: #777;
+    font-style: italic;
+  }
+
+  @media screen and (max-width: 640px) {
+    table.schedule { font-size: 0.85em; }
+    table.schedule th, table.schedule td { padding: 0.5em 0.4em; }
+    table.schedule th.session, table.schedule td.session,
+    table.schedule th.speaker, table.schedule td.speaker { width: auto; white-space: normal; }
+  }
+</style>
+
+<div class="workshop-header">
+  <h1>Performative Prediction Workshop @ FOCS 2026</h1>
+  <div class="workshop-meta">Organizer: Juan C. Perdomo</div>
+  <div class="workshop-meta">Sunday, November 8, 2026 &middot; 9:00&ndash;11:30am</div>
+  <div class="workshop-meta">NYU Kimmel Center</div>
+</div>
+
+<figure class="workshop-figure">
+  <img src="/workshops/pp_crystal_ball.png" alt="Performative prediction crystal ball illustration">
+</figure>
+
+<div class="content-sections workshop-sections">
+
+  <div class="section">
+    <p>
+      The use of algorithmic predictions in decision-making leads to a feedback loop in which the models we deploy
+      actively influence the data distributions we see and later retrain on. For instance, traffic predictions alter
+      traffic patterns, financial forecasts move market prices, and the outputs of today's language models shape the
+      data that future models are trained on.
+    </p>
+    <p>
+      Performative prediction is a recent framework that ties together ideas from learning theory, game theory, and
+      causality to formalize learning in these dynamic environments, giving rise to new equilibrium notions with their
+      own computational and statistical challenges. While a first wave of work has started to map out basic solution
+      concepts and the convergence behavior of classical ML algorithms in this setting, the area has far more questions
+      than answers.
+    </p>
+    <p>
+      The goal of this workshop is to introduce the FOCS community to the area, explore connections to neighboring
+      fields such as equilibrium computation and algorithmic game theory, and spark a discussion of new research
+      directions.
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>Speakers and Workshop Schedule</h3>
+    <p class="workshop-note">Talk titles and times are tentative.</p>
+    <table class="schedule">
+      <thead>
+        <tr>
+          <th class="session">Time</th>
+          <th class="speaker">Speaker</th>
+          <th class="talk">Talk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="session">9:00&ndash;10:00</td><td class="speaker"><a href="/">Juan Carlos Perdomo</a></td><td>Tutorial: An Introduction to Performative Prediction</td></tr>
+        <tr><td class="session">10:00&ndash;10:30</td><td class="speaker"><a href="https://www.andrew.cmu.edu/user/ianagnos/">Ioannis Anagnostides</a></td><td>The Computational Complexity of Performative Stability</td></tr>
+        <tr><td class="session">10:30&ndash;11:00</td><td class="speaker"><a href="https://www.mit.edu/~gfarina/">Gabriele Farina</a></td><td>Performativity through the Lens of the Minimax Theorem</td></tr>
+        <tr><td class="session">11:00&ndash;11:30</td><td class="speaker"><a href="https://celestine.ai/">Celestine Mendler-D&uuml;nner</a></td><td>Performativity and Economics</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
