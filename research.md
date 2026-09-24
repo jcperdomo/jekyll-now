@@ -16,11 +16,11 @@ Gabriele Farina\*, **JCP**\*
 
 [The Stability of Online Algorithms in Performative Prediction](https://arxiv.org/pdf/2602.24207)   
 Gabriele Farina\*, **JCP**\*     
-*preprint, 2026*  
+*Advances in Neural Information Processing Systems (Neurips) 2026* **[Oral Presentation 🏆]**  
 
 [On the Meta-Design of Allocation Problems](https://arxiv.org/pdf/2602.08786)   [(Toolkit)](https://github.com/unai-fa/relative-value-of-prediction)   
 Unai Fischer-Abaigar, Emily Aiken, Cristoph Kern, **JCP**   
-*preprint, 2026*   
+*Advances in Neural Information Processing Systems (Neurips) 2026*   
 
 [Defensive Generation](https://arxiv.org/pdf/2602.21390)   
 Gabriele Farina\*, **JCP**\*     
