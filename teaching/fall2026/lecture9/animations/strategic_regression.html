@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Performative risk map</title>
+<meta name="description" content="Retraining and no-regret learning on the performative risk surface of a two-dimensional strategic regression problem.">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.34.0/plotly.min.js"></script>
+<style>
+  :root {
+    color-scheme: light;
+    --surface-page: #ffffff; --surface-1: #fcfcfb;
+    --text-primary: #1f2328; --text-secondary: #52514e; --text-muted: #8a8984;
+    --grid: #e3e7ee; --link: #3b5b92;
+    --series-retrain: #eb6834; --series-noregret: #1baf7a;
+    --mark-stable: #1f2328; --mark-optimal: #6250d6; --mark-base: #8a8984;
+    --seq-100: #cde2fb; --seq-250: #86b6ef; --seq-400: #3987e5; --seq-550: #1c5cab; --seq-700: #0d366b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --surface-page: #111110; --surface-1: #1a1a19;
+      --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #8f8e88;
+      --grid: #2e2e2c; --link: #8fb0e8;
+      --series-retrain: #d95926; --series-noregret: #199e70;
+      --mark-stable: #f0efec; --mark-optimal: #9085e9; --mark-base: #8f8e88;
+      --seq-100: #0d366b; --seq-250: #184f95; --seq-400: #2a78d6; --seq-550: #6da7ec; --seq-700: #b7d3f6;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-page: #111110; --surface-1: #1a1a19;
+    --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #8f8e88;
+    --grid: #2e2e2c; --link: #8fb0e8;
+    --series-retrain: #d95926; --series-noregret: #199e70;
+    --mark-stable: #f0efec; --mark-optimal: #9085e9; --mark-base: #8f8e88;
+    --seq-100: #0d366b; --seq-250: #184f95; --seq-400: #2a78d6; --seq-550: #6da7ec; --seq-700: #b7d3f6;
+  }
+  body { font-family: Georgia, "Times New Roman", serif; color: var(--text-primary); background: var(--surface-page);
+         max-width: 1080px; margin: 0 auto; padding: 2rem 1rem 4rem; line-height: 1.55; }
+  h1 { font-size: 1.5rem; border-bottom: 2px solid var(--grid); padding-bottom: .4rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  a { color: var(--link); }
+  .nav { font-family: -apple-system, system-ui, sans-serif; font-size: .9rem; margin-bottom: 1.2rem; }
+  .nav a { text-decoration: none; margin-right: 1rem; }
+  .controls { font-family: -apple-system, system-ui, sans-serif; font-size: .9rem; display: flex; flex-wrap: wrap;
+              gap: .6rem 1.4rem; align-items: center; padding: .8rem 1rem; border: 1px solid var(--grid);
+              border-radius: 6px; background: var(--surface-1); margin: 1rem 0; }
+  .controls label { display: inline-flex; align-items: center; gap: .5rem; }
+  .controls input[type=range] { width: 160px; }
+  .controls input[type=number] { width: 5em; }
+  .controls button { font: inherit; padding: .25rem .7rem; border: 1px solid var(--grid); border-radius: 4px;
+                     background: var(--surface-page); color: var(--text-primary); cursor: pointer; }
+  .controls button:hover { border-color: var(--link); }
+  .readout { font-family: -apple-system, system-ui, sans-serif; font-size: .9rem; color: var(--text-secondary); margin: .4rem 0 1rem; }
+  .readout b { color: var(--text-primary); }
+  .plot { width: 100%; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  #contour { height: 660px; max-width: 760px; margin: 0 auto; }
+  .row.small .plot { height: 320px; }
+  @media (max-width: 760px) { .row { grid-template-columns: 1fr; } #contour { height: 420px; } }
+  .note { font-size: .92rem; color: var(--text-secondary); }
+  details { font-size: .92rem; margin: 1rem 0; }
+  summary { cursor: pointer; color: var(--link); }
+  table.data { font-family: -apple-system, system-ui, sans-serif; font-size: .8rem; border-collapse: collapse; margin-top: .5rem; }
+  table.data th, table.data td { border: 1px solid var(--grid); padding: .15rem .5rem; text-align: right; }
+</style>
+</head>
+<body>
+  <div class="nav">
+    &#8592; <a href="https://jcperdomo.org/teaching/modern-paradigms/">Back to the course page</a>
+    &nbsp;|&nbsp; Companion: <a href="retraining_dynamics.html">the decoupled risk surface in one dimension &#8594;</a>
+  </div>
+
+  <h1>Retraining on the performative risk</h1>
+
+  <p>A two-dimensional strategic regression problem in the spirit of Figure 4 of
+     <a href="https://arxiv.org/abs/2002.06673">Perdomo, Zrnic, Mendler-D&uuml;nner, and Hardt (2020)</a>.
+     The base population has features <em>x</em>&thinsp;&sim;&thinsp;N(0,&thinsp;&Sigma;) and outcomes
+     <em>y</em>&thinsp;=&thinsp;&lang;<em>&beta;</em><sup>&#8902;</sup>,&thinsp;<em>x</em>&rang;&thinsp;+&thinsp;noise. When the model
+     <em>&theta;</em>&thinsp;&isin;&thinsp;<strong>R</strong><sup>2</sup> is deployed, individuals shift their features to
+     <em>x</em>&thinsp;&minus;&thinsp;<em>&epsilon;&theta;</em> to lower their predicted value, and the Learner pays the squared loss
+     (<em>y</em>&thinsp;&minus;&thinsp;&lang;<em>&theta;</em>,&thinsp;<em>x</em>&thinsp;&minus;&thinsp;<em>&epsilon;&theta;</em>&rang;)<sup>2</sup>.
+     The distribution map is <em>&epsilon;</em>-sensitive. Everything below is computed in closed form from
+     &Sigma;, <em>&beta;</em><sup>&#8902;</sup>, and <em>&epsilon;</em>, except the no-regret algorithm, which sees samples.</p>
+
+  <div class="controls">
+    <label>&epsilon; <input id="eps" type="range" min="0" max="10" step="0.05" value="1.5"> <span id="epsv">1.50</span></label>
+    <label>rounds <em>T</em> <input id="T" type="number" min="5" max="2000" step="5" value="60"></label>
+    <label>samples per round <input id="n" type="number" min="1" max="500" step="1" value="25"></label>
+    <button id="resample">Resample</button>
+    <span style="margin-left:auto"></span>
+    <button id="step">Step</button>
+    <button id="play">Play</button>
+    <button id="reset">Reset</button>
+    <span>t = <b id="tv">0</b></span>
+  </div>
+  <div class="readout" id="readout"></div>
+
+  <p class="note">Both procedures start from the risk minimizer on the base data (&bull;). Retraining is the population
+     version, <em>&theta;</em><sub><em>t</em>+1</sub>&thinsp;=&thinsp;<em>G</em>(<em>&theta;</em><sub><em>t</em></sub>). The no-regret algorithm deploys
+     <em>&theta;</em><sub><em>t</em></sub>, collects a batch of shifted samples, and refits least squares on the entire history
+     (follow the leader). The stable point (&times;) is the fixed point of <em>G</em>; the performative optimum (&#9733;) minimizes
+     the risk. The plot is colored by the value of the performative risk PR(<em>&theta;</em>), light where it is low and dark where it is high, on a logarithmic color scale.
+     Use Step or Play to trace the trajectories.</p>
+
+  <h2>The performative risk</h2>
+  <div id="contour" class="plot"></div>
+
+  <div class="row small">
+    <div><h2>Distance to the stable point</h2><div id="dist" class="plot"></div></div>
+    <div><h2>Stability gap of the uniform mixture</h2><div id="gap" class="plot"></div></div>
+  </div>
+  <p class="note">Left: &Vert;<em>&theta;</em><sub><em>t</em></sub>&thinsp;&minus;&thinsp;<em>&theta;</em><sub>PS</sub>&Vert; per round, as in Figure 2 of the paper.
+     Right: the stability gap of the uniform mixture over the first <em>t</em> models of each procedure, computed exactly from
+     the deployed models. A negative gap means the mixture beats every single model on the data it induces. The main
+     theorem bounds the no-regret mixture's gap by Regret<sub><em>T</em></sub>/<em>T</em> for every <em>&epsilon;</em>.</p>
+
+  <details>
+    <summary>Things to try</summary>
+    <ul>
+      <li><strong>&epsilon;&thinsp;=&thinsp;0.3.</strong> Contractive regime. Retraining converges to the stable point in a few rounds; the no-regret iterates converge too, more slowly, because they see samples.</li>
+      <li><strong>&epsilon;&thinsp;=&thinsp;1.5.</strong> Retraining falls into a two-cycle, bouncing across the stable point forever. The mixture over its iterates is far from stable. The no-regret iterates still converge.</li>
+      <li><strong>&epsilon;&thinsp;=&thinsp;4.</strong> Same picture, with the optimum and the stable point pulled toward the origin: with strong gaming, small models are best.</li>
+      <li>In every regime the optimum (&#9733;) and the stable point (&times;) differ, and the no-regret algorithm finds the latter.</li>
+    </ul>
+  </details>
+
+  <details><summary>Data table</summary><div id="table"></div></details>
+
+<script>
+(function () {
+  // ---------- problem ----------
+  const S = [[1.0, 0.3], [0.3, 0.6]], bstar = [1.2, 0.8], sig = 0.5;
+  const state = { eps: 1.5, T: 60, n: 25, seed: 1, step: 0, playing: false };
+  (function readParams() {
+    const u = new URLSearchParams(location.search), num = (k, lo, hi) => { const v = parseFloat(u.get(k)); return isFinite(v) ? Math.min(hi, Math.max(lo, v)) : null; };
+    const e = num('eps', 0, 10), T = num('T', 5, 2000), n = num('n', 1, 500);
+    if (e !== null) state.eps = e; if (T !== null) state.T = Math.round(T); if (n !== null) state.n = Math.round(n);
+  })();
+
+  const dot = (a, b) => a[0] * b[0] + a[1] * b[1];
+  const mv = (M, v) => [M[0][0] * v[0] + M[0][1] * v[1], M[1][0] * v[0] + M[1][1] * v[1]];
+  const inv2 = M => { const d = M[0][0] * M[1][1] - M[0][1] * M[1][0]; return [[M[1][1] / d, -M[0][1] / d], [-M[1][0] / d, M[0][0] / d]]; };
+  const Sb = mv(S, bstar), Ey2 = dot(bstar, Sb) + sig * sig;
+  const norm = v => Math.hypot(v[0], v[1]);
+
+  const G = th => { const e2 = state.eps * state.eps;
+    return mv(inv2([[S[0][0] + e2 * th[0] * th[0], S[0][1] + e2 * th[0] * th[1]], [S[1][0] + e2 * th[1] * th[0], S[1][1] + e2 * th[1] * th[1]]]), Sb); };
+  const PR = th => { const d = [th[0] - bstar[0], th[1] - bstar[1]], q = dot(th, th); return dot(d, mv(S, d)) + sig * sig + state.eps * state.eps * q * q; };
+
+  function stablePoint() {
+    const resid = th => { const g = G(th); return norm([g[0] - th[0], g[1] - th[1]]); };
+    // damped fixed-point iteration from several starts, keep the best
+    let best = null, bestR = Infinity;
+    [bstar, [0.5 * bstar[0], 0.5 * bstar[1]], [0.1 * bstar[0], 0.1 * bstar[1]], [0.02, 0.02]].forEach(start => {
+      let th = start.slice();
+      for (let k = 0; k < 4000; k++) { const g = G(th); th = [th[0] + 0.25 * (g[0] - th[0]), th[1] + 0.25 * (g[1] - th[1])]; }
+      const r = resid(th); if (r < bestR) { bestR = r; best = th; }
+    });
+    // Newton polish
+    let th = best.slice();
+    for (let k = 0; k < 50; k++) {
+      const F = G(th), r = [F[0] - th[0], F[1] - th[1]], h = 1e-6, J = [[0, 0], [0, 0]];
+      for (let i = 0; i < 2; i++) { const pl = th.slice(), mi = th.slice(); pl[i] += h; mi[i] -= h; const gp = G(pl), gm = G(mi); J[0][i] = (gp[0] - gm[0]) / (2 * h) - (i === 0 ? 1 : 0); J[1][i] = (gp[1] - gm[1]) / (2 * h) - (i === 1 ? 1 : 0); }
+      const st = mv(inv2(J), [-r[0], -r[1]]), cand = [th[0] + st[0], th[1] + st[1]];
+      if (!isFinite(cand[0]) || !isFinite(cand[1]) || resid(cand) > resid(th)) break;
+      th = cand; if (norm(st) < 1e-13) break;
+    }
+    return th;
+  }
+  function optimum() {               // damped Newton on the convex quartic PR
+    let th = bstar.slice(); const e2 = state.eps * state.eps;
+    for (let k = 0; k < 200; k++) {
+      const q = dot(th, th), d = [th[0] - bstar[0], th[1] - bstar[1]], Sd = mv(S, d);
+      const g = [2 * Sd[0] + 4 * e2 * q * th[0], 2 * Sd[1] + 4 * e2 * q * th[1]];
+      const H = [[2 * S[0][0] + 4 * e2 * (q + 2 * th[0] * th[0]), 2 * S[0][1] + 8 * e2 * th[0] * th[1]], [2 * S[1][0] + 8 * e2 * th[1] * th[0], 2 * S[1][1] + 4 * e2 * (q + 2 * th[1] * th[1])]];
+      const s = mv(inv2(H), [-g[0], -g[1]]); th = [th[0] + s[0], th[1] + s[1]];
+      if (norm(s) < 1e-13) break;
+    }
+    return th;
+  }
+
+  function rng(seed) { let a = seed >>> 0; return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  function gaussPair(r) { const u = 1 - r(), v = r(), m = Math.sqrt(-2 * Math.log(u)); return [m * Math.cos(2 * Math.PI * v), m * Math.sin(2 * Math.PI * v)]; }
+  const L = [[Math.sqrt(S[0][0]), 0], [S[1][0] / Math.sqrt(S[0][0]), 0]]; L[1][1] = Math.sqrt(S[1][1] - L[1][0] * L[1][0]);
+
+  function simulate() {
+    const T = state.T, r = rng(state.seed), e = state.eps;
+    const retrain = [bstar.slice()], ftl = [bstar.slice()];
+    let A = [[1e-6, 0], [0, 1e-6]], c = [0, 0];
+    for (let t = 1; t <= T; t++) {
+      retrain.push(G(retrain[t - 1]));
+      const th = ftl[t - 1];
+      for (let i = 0; i < state.n; i++) {
+        const g = gaussPair(r), x = [L[0][0] * g[0], L[1][0] * g[0] + L[1][1] * g[1]];
+        const y = dot(bstar, x) + sig * gaussPair(r)[0];
+        const xs = [x[0] - e * th[0], x[1] - e * th[1]];
+        A[0][0] += xs[0] * xs[0]; A[0][1] += xs[0] * xs[1]; A[1][0] += xs[1] * xs[0]; A[1][1] += xs[1] * xs[1];
+        c[0] += xs[0] * y; c[1] += xs[1] * y;
+      }
+      ftl.push(mv(inv2(A), c));
+    }
+    const gaps = seq => {              // exact stability gap of the uniform mixture over seq[0..t]
+      const out = []; let sPR = 0, M = [[0, 0], [0, 0]]; const e2 = e * e;
+      for (let t = 0; t < seq.length; t++) {
+        const th = seq[t]; sPR += PR(th);
+        M[0][0] += th[0] * th[0]; M[0][1] += th[0] * th[1]; M[1][0] += th[1] * th[0]; M[1][1] += th[1] * th[1];
+        const n = t + 1, Mt = [[S[0][0] + e2 * M[0][0] / n, S[0][1] + e2 * M[0][1] / n], [S[1][0] + e2 * M[1][0] / n, S[1][1] + e2 * M[1][1] / n]];
+        const rhs = Ey2 - dot(Sb, mv(inv2(Mt), Sb));
+        out.push(sPR / n - rhs);
+      }
+      return out;
+    };
+    return { retrain, ftl, gapR: gaps(retrain), gapF: gaps(ftl) };
+  }
+
+  // ---------- tokens ----------
+  function tokens() {
+    const cs = getComputedStyle(document.documentElement), g = n => cs.getPropertyValue(n).trim();
+    return { surface: g('--surface-1'), text: g('--text-primary'), text2: g('--text-secondary'), muted: g('--text-muted'), grid: g('--grid'),
+             retrain: g('--series-retrain'), noregret: g('--series-noregret'), stable: g('--mark-stable'), optimal: g('--mark-optimal'), base: g('--mark-base'),
+             seq: [g('--seq-100'), g('--seq-250'), g('--seq-400'), g('--seq-550'), g('--seq-700')] };
+  }
+  const font = { family: '-apple-system, system-ui, sans-serif', size: 12 };
+
+  // ---------- rendering ----------
+  let sim = simulate(), ps = stablePoint(), po = optimum();
+  const f3 = v => v.toFixed(3);
+
+  function box() {
+    const pts = sim.retrain.concat(sim.ftl, [ps, po, bstar]);
+    let lo = Infinity, hi = -Infinity;
+    pts.forEach(p => { lo = Math.min(lo, p[0], p[1]); hi = Math.max(hi, p[0], p[1]); });
+    const pad = 0.35 * (hi - lo) + 0.15; return [lo - pad, hi + pad];
+  }
+
+  function renderReadout() {
+    const cyc = norm([sim.retrain[state.T][0] - sim.retrain[state.T - 2][0], sim.retrain[state.T][1] - sim.retrain[state.T - 2][1]]);
+    const last = norm([sim.retrain[state.T][0] - sim.retrain[state.T - 1][0], sim.retrain[state.T][1] - sim.retrain[state.T - 1][1]]);
+    const verdict = last < 1e-6 ? 'retraining converged' : cyc < 1e-3 ? 'retraining is in a two-cycle' : 'retraining has not converged';
+    document.getElementById('readout').innerHTML =
+      `&epsilon; = <b>${state.eps.toFixed(2)}</b> &middot; stable point &times; = (${f3(ps[0])}, ${f3(ps[1])}), PR = ${f3(PR(ps))} &middot; optimum &#9733; = (${f3(po[0])}, ${f3(po[1])}), PR = ${f3(PR(po))} &middot; base minimizer &bull; = (${f3(bstar[0])}, ${f3(bstar[1])}), PR = ${f3(PR(bstar))} &middot; <b>${verdict}</b>`;
+  }
+
+  function grid(range) {
+    const N = 70, xs = [], zs = []; let zmax = 0;
+    sim.retrain.concat(sim.ftl, [ps, po, bstar]).forEach(p => { zmax = Math.max(zmax, PR(p)); });
+    const cap = zmax * 2.2;
+    for (let i = 0; i <= N; i++) xs.push(range[0] + (range[1] - range[0]) * i / N);
+    let zmin = Infinity;
+    for (let j = 0; j <= N; j++) { const row = []; for (let i = 0; i <= N; i++) { const v = PR([xs[i], xs[j]]); zmin = Math.min(zmin, v); row.push(Math.log10(v)); } zs.push(row); }
+    const lo = Math.log10(zmin), hi = Math.log10(cap);
+    const ticks = [0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000].filter(v => Math.log10(v) >= lo && Math.log10(v) <= hi);
+    return { xs, zs, cap, lo, hi, ticks };
+  }
+
+  function overlays2d(tk, k) {
+    const seg = (seq, color, name, symbol) => {
+      const s = seq.slice(0, k + 1);
+      return { type: 'scatter', mode: 'lines+markers', x: s.map(p => p[0]), y: s.map(p => p[1]), line: { color, width: name === 'retraining' ? 1 : 2 },
+               opacity: name === 'retraining' ? 0.7 : 1, marker: { color, size: 6, symbol, line: { color: tk.surface, width: 1 } }, name,
+               hovertemplate: name + ' t = %{pointNumber}<br>&theta; = (%{x:.3f}, %{y:.3f})<extra></extra>' };
+    };
+    const pt = (p, color, symbol, name, size, pos) => ({ type: 'scatter', mode: 'markers+text', x: [p[0]], y: [p[1]], marker: { color, size, symbol, line: { color: tk.surface, width: 1 } },
+      text: [name], textposition: pos, textfont: { color: tk.text, size: 11 }, name, hovertemplate: name + ' (%{x:.3f}, %{y:.3f})<extra></extra>' });
+    return [seg(sim.retrain, tk.retrain, 'retraining', 'circle'), seg(sim.ftl, tk.noregret, 'no-regret (follow the leader)', 'diamond'),
+            pt(bstar, tk.base, 'circle', 'base minimizer', 11, 'top right'), pt(ps, tk.stable, 'x', 'stable', 13, 'top right'), pt(po, tk.optimal, 'star', 'optimal', 14, 'bottom left')];
+  }
+
+  function render(full) {
+    const tk = tokens(), range = box(), gr = grid(range), k = Math.min(state.step, state.T);
+    renderReadout(); document.getElementById('tv').textContent = k;
+    const colorscale = [[0, tk.seq[0]], [0.25, tk.seq[1]], [0.5, tk.seq[2]], [0.75, tk.seq[3]], [1, tk.seq[4]]];
+    Plotly.react('contour', [
+      { type: 'contour', x: gr.xs, y: gr.xs, z: gr.zs, colorscale, zmin: gr.lo, zmax: gr.hi, showscale: true,
+        colorbar: { title: { text: 'PR(θ)', font: { ...font, color: tk.text2 } }, thickness: 12, len: 0.6, tickfont: { ...font, color: tk.text2 }, outlinewidth: 0,
+                    tickvals: gr.ticks.map(v => Math.log10(v)), ticktext: gr.ticks.map(String) },
+        autocontour: false, line: { color: tk.grid, width: 0.8 }, contours: { coloring: 'fill', start: gr.lo, end: gr.hi, size: (gr.hi - gr.lo) / 22 },
+        customdata: gr.zs.map(row => row.map(v => Math.pow(10, v))), hovertemplate: '&theta; = (%{x:.2f}, %{y:.2f})<br>PR = %{customdata:.3f}<extra></extra>', name: 'PR' }
+    ].concat(overlays2d(tk, k)),
+      { paper_bgcolor: tk.surface, plot_bgcolor: tk.surface, font: { ...font, color: tk.text }, margin: { l: 45, r: 10, t: 10, b: 40 },
+        xaxis: { title: { text: 'θ₁' }, range, gridcolor: tk.grid, zeroline: false, tickfont: { color: tk.text2 } },
+        yaxis: { title: { text: 'θ₂' }, range, gridcolor: tk.grid, zeroline: false, scaleanchor: 'x', tickfont: { color: tk.text2 } },
+        legend: { orientation: 'h', y: -0.12, font: { ...font, color: tk.text2 }, bgcolor: 'rgba(0,0,0,0)' } },
+      { responsive: true, displaylogo: false });
+    if (full) {
+      const ts = sim.retrain.map((_, i) => i), dR = sim.retrain.map(p => Math.max(norm([p[0] - ps[0], p[1] - ps[1]]), 1e-12)), dF = sim.ftl.map(p => Math.max(norm([p[0] - ps[0], p[1] - ps[1]]), 1e-12));
+      const base = { paper_bgcolor: tk.surface, plot_bgcolor: tk.surface, font: { ...font, color: tk.text }, margin: { l: 55, r: 10, t: 10, b: 40 },
+                     legend: { orientation: 'h', y: 1.12, font: { ...font, color: tk.text2 }, bgcolor: 'rgba(0,0,0,0)' }, hovermode: 'x unified' };
+      Plotly.react('dist', [
+        { type: 'scatter', mode: 'lines+markers', x: ts, y: dR, name: 'retraining', line: { color: tk.retrain, width: 2 }, marker: { size: 4 }, hovertemplate: '%{y:.2e}' },
+        { type: 'scatter', mode: 'lines+markers', x: ts, y: dF, name: 'no-regret (follow the leader)', line: { color: tk.noregret, width: 2 }, marker: { size: 4, symbol: 'diamond' }, hovertemplate: '%{y:.2e}' }
+      ], { ...base, xaxis: { title: { text: 'round t' }, gridcolor: tk.grid, zeroline: false, tickfont: { color: tk.text2 } },
+           yaxis: { title: { text: '‖θ_t − θ_PS‖' }, type: 'log', dtick: 1, gridcolor: tk.grid, zeroline: false, tickfont: { color: tk.text2 }, exponentformat: 'power' } },
+        { responsive: true, displaylogo: false });
+      Plotly.react('gap', [
+        { type: 'scatter', mode: 'lines', x: ts.slice(1), y: sim.gapR.slice(1), name: 'retraining', line: { color: tk.retrain, width: 2 }, hovertemplate: '%{y:.3f}' },
+        { type: 'scatter', mode: 'lines', x: ts.slice(1), y: sim.gapF.slice(1), name: 'no-regret (follow the leader)', line: { color: tk.noregret, width: 2 }, hovertemplate: '%{y:.3f}' }
+      ], { ...base, xaxis: { title: { text: 'round t' }, gridcolor: tk.grid, zeroline: false, tickfont: { color: tk.text2 } },
+           yaxis: { title: { text: 'stability gap of the mixture' }, gridcolor: tk.grid, zeroline: true, zerolinecolor: tk.text2, zerolinewidth: 1, tickfont: { color: tk.text2 } } },
+        { responsive: true, displaylogo: false });
+      const rows = ts.map(t => `<tr><td>${t}</td><td>${f3(sim.retrain[t][0])}, ${f3(sim.retrain[t][1])}</td><td>${f3(sim.ftl[t][0])}, ${f3(sim.ftl[t][1])}</td><td>${sim.gapR[t].toFixed(4)}</td><td>${sim.gapF[t].toFixed(4)}</td></tr>`);
+      document.getElementById('table').innerHTML = `<table class="data"><thead><tr><th>t</th><th>retraining θ<sub>t</sub></th><th>no-regret θ<sub>t</sub></th><th>gap, retraining mixture</th><th>gap, no-regret mixture</th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
+    }
+  }
+
+  // ---------- controls ----------
+  const $ = id => document.getElementById(id);
+  function resim() { sim = simulate(); ps = stablePoint(); po = optimum(); state.step = state.T; state.playing = false; $('play').textContent = 'Play'; render(true); }
+  $('eps').addEventListener('input', e => { state.eps = parseFloat(e.target.value); $('epsv').textContent = state.eps.toFixed(2); resim(); });
+  $('T').addEventListener('change', e => { state.T = Math.max(5, Math.min(2000, parseInt(e.target.value) || 60)); e.target.value = state.T; resim(); });
+  $('n').addEventListener('change', e => { state.n = Math.max(1, Math.min(500, parseInt(e.target.value) || 25)); e.target.value = state.n; resim(); });
+  $('resample').addEventListener('click', () => { state.seed += 1; resim(); });
+  $('step').addEventListener('click', () => { if (state.step >= state.T) state.step = 0; else state.step += 1; render(false); });
+  $('reset').addEventListener('click', () => { state.step = 0; state.playing = false; $('play').textContent = 'Play'; render(false); });
+  let timer = null;
+  $('play').addEventListener('click', () => {
+    state.playing = !state.playing; $('play').textContent = state.playing ? 'Pause' : 'Play';
+    if (timer) { clearInterval(timer); timer = null; }
+    if (state.playing) { if (state.step >= state.T) state.step = 0; timer = setInterval(() => {
+      if (state.step >= state.T) { state.playing = false; $('play').textContent = 'Play'; clearInterval(timer); timer = null; return; }
+      state.step += 1; render(false); }, 350); }
+  });
+  if (window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => render(true));
+
+  $('eps').value = state.eps; $('epsv').textContent = state.eps.toFixed(2); $('T').value = state.T; $('n').value = state.n;
+  state.step = state.T;   // show the full trajectories on load; Reset + Play traces them
+  render(true);
+})();
+</script>
+</body>
+</html>
